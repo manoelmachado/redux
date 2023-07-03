@@ -1,14 +1,14 @@
-import { configureStore, combineReducers } from 'redux' 
+import { legacy_createStore as configureStore, combineReducers } from 'redux'
 
 const reducers = combineReducers({
-    numeros: function(state, action) {
+    numeros: function (state, action) {
         console.log(state, ' ', action)
         return {
             min: 1,
             nax: 10
         }
     },
-    nomes: function(state, action) {
+    nomes: function (state, action) {
         console.log(state, ' ', action)
         return [
             'Ana',
